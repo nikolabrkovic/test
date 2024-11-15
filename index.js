@@ -627,7 +627,7 @@ React keys must be passed directly to JSX without using spread:
     D.Fragment = m, D.jsx = ur, D.jsxs = sr;
   }()), D;
 }
-process.env.NODE_ENV === "production" ? Z.exports = cr() : Z.exports = dr();
+Z.exports = cr();
 var Pe = Z.exports;
 const pr = () => /* @__PURE__ */ Pe.jsx("h1", { children: "A COMPONENT" }), gr = () => /* @__PURE__ */ Pe.jsx("h1", { children: "B COMPONENT" });
 export {
