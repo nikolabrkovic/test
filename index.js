@@ -21163,7 +21163,7 @@ function uR() {
     }
   }
 }
-process.env.NODE_ENV === "production" ? (uR(), h0.exports = nD()) : h0.exports = rD();
+(uR(), h0.exports = nD());
 var aD = h0.exports, Qp = aD;
 if (process.env.NODE_ENV === "production")
   Gp.createRoot = Qp.createRoot, Gp.hydrateRoot = Qp.hydrateRoot;
