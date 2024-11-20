@@ -1,3 +1,4 @@
+process.env.NODE_ENV = "production";
 var f0 = { exports: {} }, Yp = {}, d0 = { exports: {} }, Et = {};
 /**
  * @license React
@@ -21163,7 +21164,6 @@ function oR() {
     }
   }
 }
-process.env.NODE_ENV = "production";
 process.env.NODE_ENV === "production" ? (oR(), p0.exports = rD()) : p0.exports = aD();
 var iD = p0.exports, v0, Fm = iD;
 if (process.env.NODE_ENV === "production")
