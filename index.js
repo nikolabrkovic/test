@@ -1,4 +1,3 @@
-process = {...{env:{NODE_ENV:"production"}}};
 var f0 = { exports: {} }, zm = {};
 /**
  * @license React
