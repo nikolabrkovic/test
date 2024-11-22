@@ -21248,7 +21248,7 @@ class gk extends HTMLElement {
     super(), this.root = null;
   }
   connectedCallback() {
-    this.root || (this.root = $f(this)), this.renderComponent();
+    this.root || (this.root = $f(this.shadow)), this.renderComponent();
   }
   renderComponent(q = this.getAttribute("mainTitle") || "") {
     if (this.root) {
@@ -21272,7 +21272,7 @@ class Sk extends HTMLElement {
     super(), this.root = null;
   }
   connectedCallback() {
-    this.root || (this.root = $f(this)), this.renderComponent();
+    this.root || (this.root = $f(this.shadow)), this.renderComponent();
   }
   renderComponent() {
     if (this.root) {
