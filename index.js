@@ -21189,7 +21189,7 @@ const ck = () => /* @__PURE__ */ bt.jsx(bt.Fragment, { children: /* @__PURE__ */
   /* @__PURE__ */ bt.jsx("div", { className: "hero-description", children: /* @__PURE__ */ bt.jsx("slot", { name: "description" }) }),
   /* @__PURE__ */ bt.jsx("div", { className: "hero-btn", children: /* @__PURE__ */ bt.jsx("slot", { name: "link" }) })
 ] }) })), pk = (J) => {
-  console.log(J);
+  console.log("ACCORDION"), console.log(J);
   const [q, A] = Mu.useState(!1);
   return /* @__PURE__ */ bt.jsxs("div", { className: "accordion-item", children: [
     /* @__PURE__ */ bt.jsxs("div", { className: "accordion-title", onClick: () => A(!q), children: [
@@ -21198,9 +21198,9 @@ const ck = () => /* @__PURE__ */ bt.jsx(bt.Fragment, { children: /* @__PURE__ */
     ] }),
     q && /* @__PURE__ */ bt.jsx("div", { className: "accordion-content", children: /* @__PURE__ */ bt.jsx("slot", { name: "acc-item-content" }) })
   ] });
-}, vk = ({ mainTitle: J }) => /* @__PURE__ */ bt.jsxs("div", { children: [
-  /* @__PURE__ */ bt.jsx("h1", { children: J }),
-  /* @__PURE__ */ bt.jsx("div", { className: "accordion", children: /* @__PURE__ */ bt.jsx(pk, {}) })
+}, vk = (J) => /* @__PURE__ */ bt.jsxs("div", { children: [
+  /* @__PURE__ */ bt.jsx("h1", { children: J.mainTitle }),
+  /* @__PURE__ */ bt.jsx("div", { className: "accordion", children: /* @__PURE__ */ bt.jsx(pk, { children: J.children }) })
 ] }), hk = ["module-id"], h0 = ["title"], uR = "liferay-a-simple-web-component", oR = "liferay-b-simple-web-component", sR = "liferay-c-simple-web-component", cR = "liferay-d-simple-web-component";
 class mk extends HTMLElement {
   static get observedAttributes() {
