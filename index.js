@@ -21245,7 +21245,7 @@ class gk extends HTMLElement {
     return h0;
   }
   constructor() {
-    super(), this.root = null;
+    super(), this.shadow = this.attachShadow({ mode: "open" }), this.root = null;
   }
   connectedCallback() {
     this.root || (this.root = $f(this.shadow)), this.renderComponent();
