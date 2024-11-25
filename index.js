@@ -21182,13 +21182,13 @@ else {
 const ck = () => /* @__PURE__ */ $t.jsx($t.Fragment, { children: /* @__PURE__ */ $t.jsx("h1", { children: "A COMPONENT" }) }), fk = ({ title: J, subtitle: G }) => /* @__PURE__ */ $t.jsxs($t.Fragment, { children: [
   /* @__PURE__ */ $t.jsx("h1", { children: J }),
   /* @__PURE__ */ $t.jsx("span", { children: G })
-] }), dk = ({ banner: J, logo: G, description: A, link: dt }) => (console.log(props), /* @__PURE__ */ $t.jsx($t.Fragment, { children: /* @__PURE__ */ $t.jsxs("div", { className: "first hero", children: [
+] }), dk = ({ banner: J, logo: G, description: A, link: dt }) => /* @__PURE__ */ $t.jsx($t.Fragment, { children: /* @__PURE__ */ $t.jsxs("div", { className: "first hero", children: [
   /* @__PURE__ */ $t.jsx("div", { className: "hero-profile-img", children: J }),
   /* @__PURE__ */ $t.jsx("div", { className: "hero-description-bk" }),
   /* @__PURE__ */ $t.jsx("div", { className: "hero-logo", children: G }),
   /* @__PURE__ */ $t.jsx("div", { className: "hero-description", children: A }),
   /* @__PURE__ */ $t.jsx("div", { className: "hero-btn", children: dt })
-] }) })), pk = (J) => {
+] }) }), pk = (J) => {
   console.log("ACCORDION"), console.log(J);
   const [G, A] = Ks.useState(!1);
   return /* @__PURE__ */ $t.jsxs("div", { className: "accordion-item", children: [
