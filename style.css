@@ -1,5 +1,5 @@
 /* Container styling */
-:host{ .hero {
+liferay-d-simple-web-component { .hero {
     display: flex;
     flex-direction: column;
     align-items: center;
