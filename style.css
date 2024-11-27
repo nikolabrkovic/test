@@ -1,5 +1,5 @@
 /* Container styling */
-#wrapper .hero {
+:host{ .hero {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,5 +81,5 @@
     }
     
 }
-
+     }
 /* Profile image section */
