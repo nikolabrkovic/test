@@ -1,5 +1,5 @@
 /* Container styling */
-body #wrapper .hero {
+#wrapper .hero {
     display: flex;
     flex-direction: column;
     align-items: center;
