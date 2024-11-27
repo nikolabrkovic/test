@@ -1,4 +1,4 @@
-liferay-d-simple-web-component.hero::part(div){
+liferay-d-simple-web-component.hero::part(native){
     display: flex;
     flex-direction: column;
     align-items: center;
