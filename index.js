@@ -21190,9 +21190,9 @@ const ck = () => /* @__PURE__ */ Qt.jsx(Qt.Fragment, { children: /* @__PURE__ */
   /* @__PURE__ */ Qt.jsx("div", { className: "hero-btn", children: /* @__PURE__ */ Qt.jsx("slot", { name: "link" }) })
 ] }) }), pk = () => {
   const [J, K] = qp.useState(!1);
-  return /* @__PURE__ */ Qt.jsxs("div", { className: "accordion-item", children: [
-    /* @__PURE__ */ Qt.jsxs("div", { className: "accordion-title", onClick: () => K(!J), children: [
-      /* @__PURE__ */ Qt.jsx("div", { className: "accordion-item-title", children: /* @__PURE__ */ Qt.jsx("slot", { name: "acc-item-title" }) }),
+  return /* @__PURE__ */ Qt.jsxs("div", { className: "accordion-item", part: "accordion-item", children: [
+    /* @__PURE__ */ Qt.jsxs("div", { className: "accordion-title", part: "accordion-title", onClick: () => K(!J), children: [
+      /* @__PURE__ */ Qt.jsx("div", { className: "accordion-item-title", part: "accordion-item-title", children: /* @__PURE__ */ Qt.jsx("slot", { name: "acc-item-title" }) }),
       /* @__PURE__ */ Qt.jsx("div", { children: J ? "-" : "+" })
     ] }),
     J && /* @__PURE__ */ Qt.jsx("div", { className: "accordion-content", children: /* @__PURE__ */ Qt.jsx("slot", { name: "acc-item-content" }) })
