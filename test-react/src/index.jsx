@@ -6,7 +6,9 @@ import {createRoot} from 'react-dom/client';
 import SimpleA from './components/A';
 import SimpleB from './components/B';
 import SimpleCard from './components/Card';
-import AccordionContainer from './components/AccordionContainer';
+import Accordion from './components/AccordionItem';
+
+import './styling/card.css';
 
 
 const A_VIEW_WATCH_ATTRIBUTES = ['module-id'];
@@ -97,7 +99,7 @@ class SimpleCWebComponent extends HTMLElement {
 
 	connectedCallback() {
 		if (!this.root) {
-			this.root = createRoot(this);
+			this.root = createRoot(this.shadow);
 		}
 		this.renderComponent();
 	}
@@ -106,7 +108,7 @@ class SimpleCWebComponent extends HTMLElement {
 
 		if (this.root) {
 			this.root.render(
-				<AccordionContainer mainTitle={mainTitle}></AccordionContainer>
+				<Accordion/>
 			);
 		}
 	}
@@ -132,7 +134,7 @@ class SimpleCardWebComponent extends HTMLElement {
 
 	connectedCallback() {
 		if (!this.root) {
-			this.root = createRoot(this);
+			this.root = createRoot(this.shadow);
 		}
 		this.renderComponent();
 	}
@@ -140,8 +142,9 @@ class SimpleCardWebComponent extends HTMLElement {
 	renderComponent() {
 
 		if (this.root) {
+
 			this.root.render(
-				<SimpleCard ></SimpleCard>
+				<SimpleCard/>
 			);
 		}
 	}

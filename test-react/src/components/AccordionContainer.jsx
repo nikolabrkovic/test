@@ -1,13 +1,12 @@
 import React from 'react';
 import Accordion from './AccordionItem';
 
-const AccordionContainer = ({mainTitle}) => {
+const AccordionContainer = (props) => {
   return (
     <div>
-      <h1>{mainTitle}</h1>
-      <div className="accordion">
-        <Accordion />
-        <Accordion />
+      <h1>{props.mainTitle}</h1>
+      <div className="accordion" part="accordion">
+        <Accordion/>
       </div>
     </div>
   );
