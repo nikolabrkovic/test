@@ -9,6 +9,7 @@ import SimpleCard from './components/Card';
 import Accordion from './components/AccordionItem';
 
 import './styling/card.css';
+import './styling/accordion.css';
 
 
 const A_VIEW_WATCH_ATTRIBUTES = ['module-id'];
